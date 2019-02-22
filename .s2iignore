@@ -1,0 +1,3 @@
+# Excluded files and folders
+node_modules
+cryptojs.js

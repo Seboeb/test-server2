@@ -1,0 +1,16 @@
+#!/bin/bash -e
+#
+# S2I assemble script for the 'secrid-expenses' image.
+# The 'assemble' script builds your application source so that it is ready to run.
+#
+# For more information refer to the documentation:
+#	https://github.com/openshift/source-to-image/blob/master/docs/builder_image.md
+#
+
+# Copying source files to app root
+echo "---> Installing application source..."
+cp -Rf /tmp/src/ ./
+
+# Installing node modules
+echo "---> Building application from source..."
+npm install
