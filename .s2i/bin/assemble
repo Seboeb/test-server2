@@ -29,6 +29,9 @@ ls ./
 echo "---> Listing /opt/app-root/src..."
 ls /opt/app-root/src/
 
+echo "---> Listing /opt/app-root/src/src..."
+ls /opt/app-root/src/src
+
 # Installing node modules
 echo "---> Building application from source..."
 npm install
