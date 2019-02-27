@@ -14,6 +14,9 @@ cp -Rf /tmp/src/ ./
 echo "---> Listing application source..."
 ls /tmp/src
 
+echo "---> Listing copied application source..."
+ls ./
+
 # Installing node modules
 echo "---> Building application from source..."
 npm install
