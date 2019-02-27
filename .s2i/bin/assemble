@@ -9,7 +9,11 @@
 
 echo "---> Current work directory..."
 ls /
+
+echo "---> One above"
 ls ../
+
+echo "---> Two above"
 ls ../../
 
 # Copying source files to app root
