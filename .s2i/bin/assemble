@@ -8,7 +8,9 @@
 #
 
 echo "---> Current work directory..."
-ls
+ls /
+ls ../
+ls ../../
 
 # Copying source files to app root
 echo "---> Installing application source..."
