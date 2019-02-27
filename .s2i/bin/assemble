@@ -7,30 +7,10 @@
 #	https://github.com/openshift/source-to-image/blob/master/docs/builder_image.md
 #
 
-echo "---> root work directory..."
-ls /
-
-echo "---> One above"
-ls ../
-
-echo "---> Two above"
-ls ../../
 
 # Copying source files to app root
 echo "---> Installing application source..."
 cp -Rf /tmp/src/. ./
-
-echo "---> Listing application source..."
-ls /tmp/src
-
-echo "---> Listing copied application source..."
-ls ./
-
-echo "---> Listing /opt/app-root/src..."
-ls /opt/app-root/src/
-
-echo "---> Listing /opt/app-root/src/src..."
-ls /opt/app-root/src/src
 
 # Installing node modules
 echo "---> Building application from source..."
