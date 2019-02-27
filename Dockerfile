@@ -16,5 +16,8 @@ RUN curl --silent --location https://rpm.nodesource.com/setup_10.x | bash -
 # Install nodejs and clean files in this dockerlayer
 RUN yum -y install nodejs && yum clean all -y
 
+
+USER 1001
+
 # Expose port of the dockerimage
 EXPOSE 8010
